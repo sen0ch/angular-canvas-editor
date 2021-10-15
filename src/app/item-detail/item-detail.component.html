@@ -1,0 +1,28 @@
+
+
+<div *ngIf="item">
+  <mat-card class="card">
+    
+  <h2>Details {{item.id}}</h2>
+
+    <mat-form-field class="full-width">
+      <mat-label>Headline</mat-label>
+      <input matInput placeholder="Ex. Headline" [(ngModel)]="item.headline">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Call to action</mat-label>
+      <input matInput placeholder="Ex. Call to action" [(ngModel)]="item.calltoaction">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Image</mat-label>
+      <input matInput placeholder="Ex. waves.jpg" [(ngModel)]="item.image">
+    </mat-form-field>
+
+</mat-card>
+<button mat-raised-button (click)="goBack()">Go Back </button>
+<button mat-raised-button (click)="save()">Save <mat-icon>done</mat-icon></button>
+
+</div>
+

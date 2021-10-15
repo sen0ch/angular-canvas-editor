@@ -1,0 +1,17 @@
+
+<div class = "flex-container"> 
+
+<div class="items" *ngFor="let item of items">
+    <app-canvas [item]="item.headline" [id]="item.id" [source]="item.image" [cta]="item.calltoaction"></app-canvas>          
+
+    <div>
+    <a routerLink="/detail/{{item.id}}">
+        <button mat-flat-button title="Edit">
+          Edit <mat-icon>edit</mat-icon>
+        </button>
+    </a>
+    </div>
+</div>
+
+</div>
+

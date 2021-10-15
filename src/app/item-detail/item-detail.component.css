@@ -1,0 +1,26 @@
+.card {
+  width: 300px;
+  margin: 12px;
+} 
+.full-width {
+  width: 280px;
+}
+label {
+  color: #5c5c5c;
+  font-weight: bold;
+}
+input {
+  font-size: 1em;
+  padding: .5rem;
+}
+button {
+  margin-left: 15px;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
